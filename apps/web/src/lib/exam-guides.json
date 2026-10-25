@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "celpip",
+    "name": "CELPIP General",
+    "status": "First launch",
+    "description": "Canadian English language proficiency preparation.",
+    "sections": [
+      [
+        "Listening",
+        "Understand conversations, discussions and viewpoints.",
+        "Practise identifying speaker intent, details and changes in opinion."
+      ],
+      [
+        "Reading",
+        "Interpret correspondence, information and different viewpoints.",
+        "Skim for structure, then use evidence from the passage."
+      ],
+      [
+        "Writing",
+        "Write emails and respond to survey questions.",
+        "Plan your answer, organize paragraphs and proofread."
+      ],
+      [
+        "Speaking",
+        "Respond to eight speaking tasks about everyday situations.",
+        "Answer directly, support your ideas and practise with a timer."
+      ]
+    ],
+    "scoring": "CELPIP reports individual skill levels. Confirm the required scores with the organization or immigration program you are applying to."
+  },
+  {
+    "slug": "ielts",
+    "name": "IELTS",
+    "status": "Planned",
+    "description": "English proficiency preparation for academic, professional and migration goals.",
+    "sections": [
+      [
+        "Listening",
+        "Understand recorded conversations and presentations.",
+        "Preview questions and watch for paraphrasing."
+      ],
+      [
+        "Reading",
+        "Interpret passages and answer comprehension questions.",
+        "Manage time and locate supporting evidence."
+      ],
+      [
+        "Writing",
+        "Complete task-based written responses.",
+        "Follow the requirements of your selected IELTS test version."
+      ],
+      [
+        "Speaking",
+        "Participate in a structured speaking interview.",
+        "Develop answers naturally with examples."
+      ]
+    ],
+    "scoring": "IELTS uses band scores. Academic and General Training differ in some tasks."
+  },
+  {
+    "slug": "pte",
+    "name": "PTE Academic",
+    "status": "Planned",
+    "description": "Computer-based academic English proficiency preparation.",
+    "sections": [
+      [
+        "Speaking & Writing",
+        "Complete integrated speaking and writing tasks.",
+        "Practise clear speech and structured written answers."
+      ],
+      [
+        "Reading",
+        "Work through academic reading tasks.",
+        "Pay attention to meaning, grammar and time limits."
+      ],
+      [
+        "Listening",
+        "Understand recordings and complete listening tasks.",
+        "Take concise notes and practise active listening."
+      ]
+    ],
+    "scoring": "PTE Academic reports scores on a 10\u201390 scale. Check the official guide for current scoring details."
+  },
+  {
+    "slug": "gre",
+    "name": "GRE General Test",
+    "status": "Future roadmap",
+    "description": "Graduate admissions preparation.",
+    "sections": [
+      [
+        "Verbal Reasoning",
+        "Analyze written material and vocabulary in context.",
+        "Practise inference and sentence-level reasoning."
+      ],
+      [
+        "Quantitative Reasoning",
+        "Solve mathematical and data interpretation problems.",
+        "Review fundamentals and check calculations."
+      ],
+      [
+        "Analytical Writing",
+        "Develop a reasoned written argument.",
+        "Create a clear thesis and support it with examples."
+      ]
+    ],
+    "scoring": "GRE uses section-specific scoring. Verify current structure and score ranges with ETS."
+  },
+  {
+    "slug": "gmat",
+    "name": "GMAT Exam",
+    "status": "Future roadmap",
+    "description": "Business school admissions preparation.",
+    "sections": [
+      [
+        "Quantitative Reasoning",
+        "Solve quantitative problems.",
+        "Prioritize mathematical reasoning and accuracy."
+      ],
+      [
+        "Verbal Reasoning",
+        "Evaluate written arguments and comprehension.",
+        "Identify assumptions and logical relationships."
+      ],
+      [
+        "Data Insights",
+        "Interpret and evaluate information from different sources.",
+        "Practise efficient data analysis."
+      ]
+    ],
+    "scoring": "The current GMAT Exam uses a total score scale of 205\u2013805. Verify current details with mba.com."
+  }
+]

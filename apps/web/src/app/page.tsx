@@ -1,12 +1,5 @@
 
 
-const skills = [
-  { number: "01", icon: "📖", title: "Reading", description: "Build comprehension and confidence with exam-style passages.", tag: "First to launch", active: true },
-  { number: "02", icon: "✍️", title: "Writing", description: "Practice real-world writing tasks and receive targeted feedback.", tag: "Coming soon", active: false },
-  { number: "03", icon: "🎧", title: "Listening", description: "Train your focus with realistic listening exercises.", tag: "Coming soon", active: false },
-  { number: "04", icon: "🎙️", title: "Speaking", description: "Improve fluency and structure through guided practice.", tag: "Coming soon", active: false },
-];
-
 export default function Home() {
   return (
     <main className="site">
@@ -19,11 +12,11 @@ export default function Home() {
               <span>ZenAI <strong>Prep</strong></span>
             </a>
             <div className="navLinks">
-              <a href="#features">Why ZenAI</a>
+              <a href="#features">Why ZenAI</a><a href="/practice">Practice Tests</a><a href="/exams">Exam guides</a>
               <a href="#exam-catalog">Exam preparation</a>
               <a href="#how-it-works">How it works</a>
             </div>
-            <a className="navButton" href="#exam-catalog">Explore practice <span aria-hidden="true">↗</span></a>
+            <a className="navButton" href="#exam-catalog">Explore exams <span aria-hidden="true">↗</span></a>
           </nav>
         </div>
       </header>
@@ -69,27 +62,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="exams" className="section">
-        <div className="container">
-          <div className="sectionIntro"><div><span className="kicker">01 / YOUR EXAM, YOUR PATH</span><h2>Start with <em>CELPIP General.</em></h2></div><p>One exam. Four essential skills. A preparation experience designed to help you know what to practice next.</p></div>
-          <div className="examBanner"><div><span className="examBadge">INITIAL EXAM FOCUS</span><h3>CELPIP General</h3><p>Purpose-built preparation for your English language goals.</p></div><span className="examSymbol" aria-hidden="true">A<span>+</span></span></div>
-          <div className="skillGrid">{skills.map((skill) => <article key={skill.title} className={`skillCard ${skill.active ? "activeSkill" : ""}`}><div className="skillTop"><span className="skillIcon" aria-hidden="true">{skill.icon}</span><span className="skillNumber">{skill.number}</span></div><h3>{skill.title}</h3><p>{skill.description}</p><span className={skill.active ? "skillActiveTag" : "skillTag"}>{skill.tag} <span aria-hidden="true">↗</span></span></article>)}</div>
-          <p className="availabilityNote">ZenAI Prep is under development. Practice modules and account registration are not yet available.</p>
-        </div>
-      </section>
-
-      <section id="features" className="section featuresSection">
-        <div className="container"><div className="sectionIntro"><div><span className="kicker">02 / PREP WITH PURPOSE</span><h2>Less guessing.<br /><em>More growing.</em></h2></div><p>Great preparation goes beyond getting an answer right. It helps you understand how to improve.</p></div><div className="featureGrid"><div className="feature"><span>◎</span><h3>Practice that feels real</h3><p>Build confidence with focused, timed activities designed around exam-style tasks.</p></div><div className="feature"><span>✧</span><h3>Feedback you can use</h3><p>Understand strengths and areas to improve, with AI-assisted feedback planned for writing and speaking.</p></div><div className="feature"><span>▥</span><h3>Progress you can see</h3><p>Review attempts, spot patterns, and keep your learning goals in view.</p></div></div></div>
-      </section>
-
-      <section id="how-it-works" className="howSection"><div className="container"><div className="howCard"><div><span className="kicker">03 / THE JOURNEY</span><h2>Your next chapter<br />starts with <em>practice.</em></h2><p>Choose a skill, complete a practice session, and use your results to decide what to focus on next.</p><a href="#exam-catalog" className="primaryButton">Explore the exam <span aria-hidden="true">↗</span></a></div><div className="steps"><div><span>01</span><strong>Choose a skill</strong><p>Start with the area you want to strengthen.</p></div><div><span>02</span><strong>Practice with focus</strong><p>Work through structured exam-style activities.</p></div><div><span>03</span><strong>Learn and improve</strong><p>Use your results to guide your next session.</p></div></div></div></div></section>
-
-      
-<section id="exam-catalog" className="examCatalog">
+      <section id="exam-catalog" className="examCatalog">
   <div className="container">
     <div className="examCatalogHeading">
-      <span className="examEyebrow">YOUR GOALS, YOUR PATH</span>
-      <h2>One platform. More possibilities.</h2>
+      <span className="examEyebrow">01 / CHOOSE YOUR EXAM</span>
+      <h2>Choose your exam. Own your progress.</h2>
       <p>Start with CELPIP today. More exam preparation experiences are on our roadmap.</p>
     </div>
     <div className="examCatalogGrid">
@@ -97,31 +74,56 @@ export default function Home() {
         <span className="examStatus examStatusLive">First launch</span>
         <h3>CELPIP</h3>
         <p>English language preparation for Canadian immigration and professional goals.</p>
+<a className="examGuideLink" href="/exams/celpip">View exam guide →</a>
       </article>
       <article className="examCatalogCard">
         <span className="examStatus">Planned</span>
         <h3>IELTS</h3>
         <p>Academic and General Training English proficiency preparation.</p>
+<a className="examGuideLink" href="/exams/ielts">View exam guide →</a>
       </article>
       <article className="examCatalogCard">
         <span className="examStatus">Planned</span>
         <h3>PTE</h3>
         <p>Computer-based English proficiency preparation.</p>
+<a className="examGuideLink" href="/exams/pte">View exam guide →</a>
       </article>
       <article className="examCatalogCard">
         <span className="examStatus">Future roadmap</span>
         <h3>GRE</h3>
         <p>Graduate school admissions test preparation.</p>
+<a className="examGuideLink" href="/exams/gre">View exam guide →</a>
       </article>
       <article className="examCatalogCard">
         <span className="examStatus">Future roadmap</span>
         <h3>GMAT</h3>
         <p>Business school admissions test preparation.</p>
+<a className="examGuideLink" href="/exams/gmat">View exam guide →</a>
       </article>
     </div>
   </div>
 </section>
-<footer className="footer"><div className="container footerInner"><a href="#top" className="brand"><span className="brandMark">Z<span>.</span></span><span>ZenAI <strong>Prep</strong></span></a><div><p>Prepare with purpose. Grow with confidence.</p><small>© 2026 ZenAI Prep. All rights reserved.</small></div></div><div className="container disclaimer">Independent exam preparation platform. Not affiliated with or endorsed by CELPIP or its official administrators. Any future AI-generated score estimates will be unofficial.</div></footer>
+
+<section id="features" className="section featuresSection">
+        <div className="container"><div className="sectionIntro"><div><span className="kicker">02 / PREP WITH PURPOSE</span><h2>Less guessing.<br /><em>More growing.</em></h2></div><p>Great preparation goes beyond getting an answer right. It helps you understand how to improve.</p></div><div className="featureGrid"><div className="feature"><span>◎</span><h3>Practice that feels real</h3><p>Build confidence with focused, timed activities designed around exam-style tasks.</p></div><div className="feature"><span>✧</span><h3>Feedback you can use</h3><p>Understand strengths and areas to improve, with AI-assisted feedback planned for writing and speaking.</p></div><div className="feature"><span>▥</span><h3>Progress you can see</h3><p>Review attempts, spot patterns, and keep your learning goals in view.</p></div></div></div>
+      </section>
+
+      <section id="how-it-works" className="howSection"><div className="container"><div className="howCard"><div><span className="kicker">03 / THE JOURNEY</span><h2>Your next chapter<br />starts with <em>practice.</em></h2><p>Choose your exam, practise with purpose, and use feedback to guide your progress.</p><a href="#exam-catalog" className="primaryButton">Explore exams <span aria-hidden="true">↗</span></a></div><div className="steps"><div><span>01</span><strong>Choose your exam</strong><p>Explore exams and select your preparation path.</p></div><div><span>02</span><strong>Practice with focus</strong><p>Work through structured exam-style activities.</p></div><div><span>03</span><strong>Learn and improve</strong><p>Use your results to guide your next session.</p></div></div></div></div></section>
+
+      
+<section id="homepage-guides" className="examCatalog">
+  <div className="container">
+    <div className="examCatalogHeading">
+      <span className="examEyebrow">04 / EXAM GUIDES & TIPS</span>
+      <h2>Exam guides & preparation tips</h2>
+      <p>Understand exam patterns, scoring, sections and proven study habits.</p>
+      <a href="/exams" style={{ color: "#147866", fontWeight: 700 }}>
+        Explore all exam guides →
+      </a>
+    </div>
+  </div>
+</section>
+<footer className="footer"><div className="container footerInner"><a href="#top" className="brand"><span className="brandMark">Z<span>.</span></span><span>ZenAI <strong>Prep</strong></span></a><div><p>Prepare with purpose. Grow with confidence.</p><small>© 2026 ZenAI Prep. All rights reserved.</small></div></div><div className="container disclaimer">Independent exam preparation platform. Not affiliated with or endorsed by official exam providers. Any future AI-generated score estimates will be unofficial.</div></footer>
     </main>
   );
 }

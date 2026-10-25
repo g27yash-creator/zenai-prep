@@ -85,3 +85,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+.examGuideLink {
+  display: inline-block;
+  margin-top: 20px;
+  color: #147866;
+  font-size: 14px;
+  font-weight: 800;
+}
+.examGuideLink:hover {
+  text-decoration: underline;
+}
