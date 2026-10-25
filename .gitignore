@@ -29,3 +29,5 @@ coverage/
 *.sqlite3
 *.db
 *.log
+
+.homepage-backups/
